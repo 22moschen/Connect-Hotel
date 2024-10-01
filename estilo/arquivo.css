@@ -44,6 +44,12 @@ h1 {
     padding: 20px 0px 20px 0px;
     align-items: center;
     color: #f5f5f5;
+    position: fixed;
+    top: 0; /* Posiciona no topo */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+
 }
 
 .wrap-options {
@@ -708,4 +714,56 @@ h5{
 
 .L {
     padding: 1vh;
+}
+
+.container-acao{
+    background-image: url('img/pattern.jpg');
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.action-h3 {
+    display: flex;
+    font-size: 2.5em;
+    color: aquamarine;
+    background: #000000, opacity 0%;
+    justify-content: center;
+    padding-top: 5vh;
+    transition: all 0.3s;
+}
+
+.action-h3:hover {
+    transform: scale(1.05);
+    color: #2bd1a3;
+
+}
+
+.cta-button {
+    background-color: #2bd1a3;
+    transition: all 0.3s;
+    margin: 5em;
+    padding: 7px;
+    color: #100f0f;
+    font-size: 12px;
+    border-radius: 10px;
+}
+.cta-button:hover {
+    transform: scale(1.05);
+    color: #20a6ff;
+
+}
+
+.action-p {
+    font-size: 1.5em;
+    color: #dedede;
+    background: #000000, opacity 0%;
+    padding: 50px;
+    align-items: start;
+    max-width: 800px;
 }
